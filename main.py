@@ -37,7 +37,7 @@ def test_application_link(driver):
     WebDriverWait(driver, 20).until(
         EC.element_to_be_clickable((By.XPATH, "//div[contains(@class,'fab-Card fab-Card--sizeFull fab-Card--withoutBottomGradient')]//span[contains(@class,'jss-f76')][normalize-space()='Apply for This Job']"))).click()
     text = driver.page_source
-    assert "Apply for this Position" in text, "Expected 'Apply for This Job' in page source"
+    assert "Apply for this Position" in text, "Expected 'Apply for this Position' in page source"
 
 def test_fill_info(driver):
     name = "Anastasios"
